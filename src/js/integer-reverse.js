@@ -1,4 +1,4 @@
-const intReverse = (n) => {
+const intReverseRecursive = (n) => {
 
   let obj = {n: n, i: 0};
 
@@ -25,7 +25,7 @@ const recursive = (obj) => {
 // 1 2 3 4
 // 3 2 1 0
 
-const intReverse2 = (n) => {
+const intReverseIterative = (n) => {
 
   let y = n;
   let i = 0;
@@ -46,9 +46,17 @@ const intReverse2 = (n) => {
   return y;
 };
 
-console.log(intReverse(0));
-console.log(intReverse(5));
-console.log(intReverse(13));
-console.log(intReverse(123));
-console.log(intReverse(1234));
-console.log(intReverse(-123));
+console.log(intReverseRecursive(0));
+console.log(intReverseRecursive(5));
+console.log(intReverseRecursive(13));
+console.log(intReverseRecursive(123));
+console.log(intReverseRecursive(1234));
+console.log(intReverseRecursive(-123));
+
+
+console.log(intReverseIterative(0));
+console.log(intReverseIterative(5));
+console.log(intReverseIterative(13));
+console.log(intReverseIterative(123));
+console.log(intReverseIterative(1234));
+console.log(intReverseIterative(-123));
