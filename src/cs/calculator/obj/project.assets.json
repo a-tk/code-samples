@@ -8,23 +8,26 @@
     "net7.0": []
   },
   "packageFolders": {
-    "C:\\Users\\atk\\.nuget\\packages\\": {}
+    "/home/atk/.nuget/packages/": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "H:\\git\\code-samples\\src\\cs\\calculator\\calculator.csproj",
+      "projectUniqueName": "/home/atk/git/code-samples/src/cs/calculator/calculator.csproj",
       "projectName": "calculator",
-      "projectPath": "H:\\git\\code-samples\\src\\cs\\calculator\\calculator.csproj",
-      "packagesPath": "C:\\Users\\atk\\.nuget\\packages\\",
-      "outputPath": "H:\\git\\code-samples\\src\\cs\\calculator\\obj\\",
+      "projectPath": "/home/atk/git/code-samples/src/cs/calculator/calculator.csproj",
+      "packagesPath": "/home/atk/.nuget/packages/",
+      "outputPath": "/home/atk/git/code-samples/src/cs/calculator/obj/",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\atk\\AppData\\Roaming\\NuGet\\NuGet.Config"
+        "/home/atk/.nuget/NuGet/NuGet.Config"
       ],
       "originalTargetFrameworks": [
         "net7.0"
       ],
+      "sources": {
+        "https://api.nuget.org/v3/index.json": {}
+      },
       "frameworks": {
         "net7.0": {
           "targetAlias": "net7.0",
@@ -56,7 +59,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.202\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "/home/atk/.dotnet/sdk/7.0.202/RuntimeIdentifierGraph.json"
       }
     }
   }

@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "BLGc2rqcrptqFta2470EPWXCXVsTiOCjIh8Vhz93TpA3CHxP+CUGqdfvDkPkGDBEfB4LsUYKRGJdd3JuoqU1qw==",
+  "dgSpecHash": "nhlvprS6QVpJDeMhJWL1ewzHeCAc2Gg9T6ipSZy7ZC4nzf8Tb+PS01IOzRIH37B14/l8FPXriNxNxPT89CeTog==",
   "success": true,
-  "projectFilePath": "H:\\git\\code-samples\\src\\cs\\calculator\\calculator.csproj",
+  "projectFilePath": "/home/atk/git/code-samples/src/cs/calculator/calculator.csproj",
   "expectedPackageFiles": [],
   "logs": []
 }
