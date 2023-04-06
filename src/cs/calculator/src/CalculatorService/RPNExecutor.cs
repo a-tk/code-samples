@@ -1,6 +1,9 @@
+
+using System;
+using System.Collections;
 public class RPNExecutor : ExecutorInterface 
 {
-    private Stack<Double> executionStack;
+    private Stack<double> executionStack;
 
     public RPNExecutor() {
         executionStack = new Stack<double>();
