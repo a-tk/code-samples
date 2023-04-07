@@ -3,10 +3,10 @@ using System;
 using System.Collections;
 public class RPNExecutor : ExecutorInterface 
 {
-    private Stack<double> executionStack;
+    private Stack executionStack;
 
     public RPNExecutor() {
-        executionStack = new Stack<double>();
+        executionStack = new Stack();
     }
     public void enterKey(Double value) {
         executionStack.Push(value);
@@ -32,7 +32,7 @@ public class RPNExecutor : ExecutorInterface
     }
 
     private Double popStack() {
-        return executionStack.Pop();
+        return (double)executionStack.Pop();
     }
 
     
