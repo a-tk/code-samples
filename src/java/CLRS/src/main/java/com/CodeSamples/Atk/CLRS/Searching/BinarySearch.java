@@ -35,7 +35,7 @@ public class BinarySearch<T extends Comparable<T>> {
     public int binarySearchIterative(T[] array, T x) {
 
         int low = 0;
-        int high = array.length;
+        int high = array.length - 1;
         int midpoint;
 
         while (low <= high ) {

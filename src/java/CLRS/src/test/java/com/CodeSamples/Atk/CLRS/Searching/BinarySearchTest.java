@@ -15,7 +15,7 @@ public class BinarySearchTest {
 
     @Before
     public void setUp() throws Exception {
-        array = new Integer[] {6, 2, 1, 0, -40, 100};
+        array = new Integer[] {1, 2, 3, 4, 5, 6};
         binarySearch = new BinarySearch<>();
     }
 
@@ -26,14 +26,14 @@ public class BinarySearchTest {
     @Test
     public void testSearchIterative() {
 
-        int found = binarySearch.binarySearchIterative(array, 6);
+        int found = binarySearch.binarySearchIterative(array, 1);
         assertEquals(0, found);
     }
 
     @Test
     public void testUpperBoundIterative() {
 
-        int found = binarySearch.binarySearchIterative(array, 100);
+        int found = binarySearch.binarySearchIterative(array, 6);
         assertEquals(5, found);
     }
 
@@ -47,21 +47,21 @@ public class BinarySearchTest {
     @Test
     public void testSearchRecursive() {
 
-        int found = binarySearch.binarySearchRecursive(array, 6, 0, array.length);
+        int found = binarySearch.binarySearchRecursive(array, 1, 0, array.length - 1);
         assertEquals(0, found);
     }
 
     @Test
     public void testUpperBoundRecursive() {
 
-        int found = binarySearch.binarySearchRecursive(array, 100, 0, array.length);
+        int found = binarySearch.binarySearchRecursive(array, 6, 0, array.length - 1);
         assertEquals(5, found);
     }
 
     @Test
     public void testNotFoundRecursive() {
 
-        int found = binarySearch.binarySearchRecursive(array, 123, 0, array.length);
+        int found = binarySearch.binarySearchRecursive(array, 123, 0, array.length - 1);
         assertEquals(-1, found);
     }
 
@@ -77,7 +77,7 @@ public class BinarySearchTest {
         System.out.println("Iterative binary search took " + (end - start) + " millis");
 
         start = System.currentTimeMillis();
-        binarySearch.binarySearchRecursive(array, 0, 0, array.length);
+        binarySearch.binarySearchRecursive(array, 0, 0, array.length - 1);
         end = System.currentTimeMillis();
 
         System.out.println("Recursive binary search took " + (end - start) + " millis");
@@ -102,7 +102,7 @@ public class BinarySearchTest {
         System.out.println("Iterative binary search took " + (end - start) + " millis");
 
         start = System.currentTimeMillis();
-        binarySearch.binarySearchRecursive(array, -1, 0, array.length);
+        binarySearch.binarySearchRecursive(array, -1, 0, array.length - 1);
         end = System.currentTimeMillis();
 
         System.out.println("Recursive binary search took " + (end - start) + " millis");
