@@ -1,6 +1,6 @@
 package com.CodeSamples.Atk.CLRS;
 
-import com.CodeSamples.Atk.CLRS.Sorting.InsertionSort;
+import com.CodeSamples.Atk.CLRS.Sorting.Sorting;
 
 /**
  * Hello world!
@@ -15,9 +15,9 @@ public class App
 
         System.out.println( "Original Array " + printArray(a));
 
-        InsertionSort insertionSort = new InsertionSort(a); 
+        Sorting<Integer> sorting = new Sorting<Integer>();
         
-        System.out.println("Insertion sort: " + printArray(insertionSort.sort()));
+        System.out.println("Insertion sort: " + printArray(sorting.insertionSort(a)));
     }
 
     public static String printArray(Integer[] a) {
