@@ -11,7 +11,7 @@ public class App
     public static void main( String[] args )
     {
 
-        int[] a = {9, 8, 7, 6, 5, 4, 3, 2, 1 };
+        Integer[] a = {9, 8, 7, 6, 5, 4, 3, 2, 1 };
 
         System.out.println( "Original Array " + printArray(a));
 
@@ -20,7 +20,7 @@ public class App
         System.out.println("Insertion sort: " + printArray(insertionSort.sort()));
     }
 
-    public static String printArray(int[] a) {
+    public static String printArray(Integer[] a) {
         String printedA = "";
 
         if ( a == null ) {

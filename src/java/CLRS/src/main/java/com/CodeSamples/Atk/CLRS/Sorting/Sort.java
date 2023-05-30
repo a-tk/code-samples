@@ -1,6 +1,6 @@
 package com.CodeSamples.Atk.CLRS.Sorting;
 
-public interface Sort {
-    public int[] sort ();
+public interface Sort<T> {
+    public T[] sort ();
   
 }

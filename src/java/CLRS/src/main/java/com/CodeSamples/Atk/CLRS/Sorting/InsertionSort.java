@@ -2,15 +2,15 @@ package com.CodeSamples.Atk.CLRS.Sorting;
 
 import java.util.Arrays;
 
-public class InsertionSort implements Sort {
+public class InsertionSort implements Sort<Integer> {
 
-    private int[] b;
+    private Integer[] b;
 
-    public InsertionSort(int[] a) {
+    public InsertionSort(Integer[] a) {
         b = Arrays.copyOf(a, a.length);
     }
 
-    public int[] sort () {
+    public Integer[] sort () {
 
         if (b != null && b.length > 1) { // if length is one or less, its already sorted
 
