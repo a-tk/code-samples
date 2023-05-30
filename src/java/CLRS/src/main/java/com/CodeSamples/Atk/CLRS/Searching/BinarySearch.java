@@ -10,7 +10,7 @@ public class BinarySearch<T extends Comparable<T>> {
      * @param high - the highest index to search
      * @return - the index or -1 if not found
      */
-    public int BinarySearchRecursive(T[] array, T x, int low, int high) {
+    public int binarySearchRecursive(T[] array, T x, int low, int high) {
 
         if (low > high) {
             return -1;
@@ -19,10 +19,10 @@ public class BinarySearch<T extends Comparable<T>> {
 
         if (array[midpoint].equals(x)) {
             return midpoint;
-        } else if (array[midpoint].compareTo(x) < 0) {
-            return BinarySearchRecursive(array, x, low, midpoint - 1);
+        } else if (array[midpoint].compareTo(x) > 0) {
+            return binarySearchRecursive(array, x, low, midpoint - 1);
         } else {
-            return BinarySearchRecursive(array, x, midpoint + 1, high);
+            return binarySearchRecursive(array, x, midpoint + 1, high);
         }
     }
 
@@ -32,7 +32,7 @@ public class BinarySearch<T extends Comparable<T>> {
      * @param x - the object to search for
      * @return - the index or -1 if not found
      */
-    public int BinarySearchIterative(T[] array, T x) {
+    public int binarySearchIterative(T[] array, T x) {
 
         int low = 0;
         int high = array.length;
@@ -45,7 +45,7 @@ public class BinarySearch<T extends Comparable<T>> {
 
             if (compare == 0) {
                 return midpoint;
-            } else if (compare < 0) {
+            } else if (compare > 0) {
                 high = midpoint - 1;
             } else {
                 low = midpoint + 1;
